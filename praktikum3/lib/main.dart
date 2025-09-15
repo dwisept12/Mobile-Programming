@@ -73,8 +73,6 @@ class _HomepageState extends State<Homepage> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text("Keluar dari aplikasi")),
                 );
-                // Jika benar-benar ingin keluar app (Android), bisa pakai:
-                // SystemNavigator.pop();
               },
             ),
           ],
@@ -102,20 +100,3 @@ class _HomepageState extends State<Homepage> {
     );
   }
 }
-
-
-//class Homepage extends StatelessWidget {
-//   const Homepage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: const Text('Aplikasi Mahasiswa'),),
-//       body: const Center(
-//         child: Text('Welcome to App Mahasiswa!',
-//           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-//         ),
-//       ),
-//     );
-//   }
-// }
